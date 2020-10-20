@@ -133,10 +133,12 @@ margin-right: 10px;
 }
 
 .tarifs {
-	background: linear-gradient(#01060B, #174260);
 	padding: 80px;
 } 
 
+.bg_gradient {
+	background: linear-gradient(#01060B, #174260);
+}
 
 h1 {
 font-size: 130%;
@@ -196,7 +198,7 @@ font-size: 130%;
 }
 
 .footer {
-	background: linear-gradient(#01060B, #174260);
+	padding: 20px 150px;
 }
 
 .footer h1{
@@ -237,10 +239,35 @@ a {
 a:hover
 {
 text-decoration: underline;
-
+color: #fff;
 }
 
 .image_footer ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.image_footer img {
+	width: 50px;
+	height: 35px;
+}
+
+.separator {
+	width: 300px;
+	height: 2px;
+	background: #fff;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border-radius: 4px;
+}
+
+.actu_film{
+	background-color: black;
+}
+
+#etoile{
 	display: flex;
 	flex-direction: row;
 }
