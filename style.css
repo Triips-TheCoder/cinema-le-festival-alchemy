@@ -131,3 +131,116 @@ margin-right: 10px;
 	width: 100%;
 	height: vh;
 }
+
+.tarifs {
+	background: linear-gradient(#01060B, #174260);
+	padding: 80px;
+} 
+
+
+h1 {
+font-size: 130%;
+
+}
+.box_price{
+	background-color:black;
+	border-radius: 7%;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
+}
+
+.container_price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price_description {
+	opacity: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.title_description{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding-right: 15%;
+}
+
+.title_description p {
+	margin-top: 0;
+	font-size: 12px;;
+	font-family: "HelveticaNeue-Thin", "Helvetica Neue";
+	
+}
+
+.title_description h1 {
+	margin-bottom: 0;
+	font-size: 20px;;
+}
+
+.price_description > p {
+	font-style: bold;
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	font-size: 20px;
+}
+
+.tarifs h3 {
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	font-size: 58px;
+}
+
+.footer {
+	background: linear-gradient(#01060B, #174260);
+}
+
+.footer h1{
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	font-size: 20px;
+}
+
+.footer p{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+	font-size: 15px;
+}
+
+.onglet {
+	display: flex;
+	justify-content: space-between;
+}
+
+.partnership li{
+	display: flex;
+	justify-content: center;
+}
+
+.copyright span {
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+ul {
+	list-style-type: none;
+}
+	
+a {
+	text-decoration:none; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+	color: white;
+	font-size: 15px;
+}
+	
+a:hover
+{
+text-decoration: underline;
+
+}
+
+.image_footer ul {
+	display: flex;
+	flex-direction: row;
+}
