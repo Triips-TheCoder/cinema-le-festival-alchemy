@@ -1,0 +1,133 @@
+
+
+/* micro reset */
+
+* {
+	box-sizing: border-box;
+}
+html, body, ul {
+	padding: 0; margin: 0;
+}
+
+body {
+	font-family: Helvetica, Helvetica, Arial, sans-serif;
+	color: #F1EEDD;
+	width: 100%;
+	height: 2000px;
+
+}
+/* menu complet */
+.header {
+	position: fixed;
+	font-size: 20px;
+	width: 100%;
+	z-index: 10;
+}
+/* logo */
+.header-logo {
+margin-left: 10px;
+float: left;
+
+vertical-align: middle;
+}
+
+.header-logo img {
+	max-width: 200px;
+height: auto;
+}
+/* couleur menu */
+.main-header {
+	color: #ffffff;
+	background : rgb(0,0,0,.5);
+	
+}
+
+.header-inner {
+	display:table;
+	width: 100%;
+	padding: 20px 0px;
+}
+
+
+.header-inner > * {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+    
+}
+
+/* Alignement du menu */
+.header-nav {
+margin-right: 10px;
+	
+}
+
+.header-nav ul,
+.header-nav li {
+	display: inline;
+    list-style: none;
+    
+}
+.header-nav a {
+	position: relative;
+
+	padding: 8px 80px;
+    vertical-align: middle;
+	font-weight: 300; /* entre regular et light */
+	letter-spacing: 0.025em;
+	color: inherit;
+    text-decoration: none;
+}
+/* enlever sooulignement et couleur au survol */
+
+.header-nav a:hover {
+	 color: white;
+	 text-decoration: none;
+ }
+/* Animation du lien */
+.header-nav a:after {
+	content: "";
+	position: absolute;
+	bottom: 0; right: 20px; left: 20px;
+	height: 2px;
+	background-color: #ffffff;
+
+	/* Préparation de notre animation */
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all .4s;
+}
+/* Le trait */
+.header-nav a:hover:after,
+.header-nav a:focus:after {
+	opacity: .6;
+	transform: translateY(0);
+}
+
+.header-nav a:focus {
+	outline: none;
+}
+
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+.slider {
+	z-index: 1;
+}
+
+
+.carousel img{
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.carousel-inner {
+	width: 100%;
+	height: vh;
+}
