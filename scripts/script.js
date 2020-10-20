@@ -17,3 +17,4 @@ function myFunction() {
 window.onscroll = function() { menu()};
 
 var menu = document.getElementById("myHeader")
+var sticky = classLst.add("sticky")
