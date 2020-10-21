@@ -1,16 +1,13 @@
 
-window.onscroll = function() {myFunction()};
+var positionbase = window.scrollY;
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
+window.addEventListener("scroll", function() {
+  var scollY = window.scrollY;
+  if(scrollY < positionbase) {
+    document.getElementById("myHeader").style.top = "0px";
+  }else { 
+    document.getElementById("myHeader").style.top = "-120px";
   }
-}
-
-
+  positionbase = scrollY;
+});
 
