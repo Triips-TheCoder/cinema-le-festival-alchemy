@@ -10,7 +10,6 @@ html, body, ul {
 }
 
 body {
-	font-family: Helvetica, Helvetica, Arial, sans-serif;
 	color: #F1EEDD;
 	width: 100%;
 }
@@ -31,7 +30,7 @@ vertical-align: middle;
 }
 
 .header-logo img {
-	max-width: 185px;
+	max-width: 160px;
 height: auto;
 }
 .icon { 
@@ -130,7 +129,7 @@ font-size: 20px;
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
-	filter: blur(4px) contrast(150%);
+	filter: blur(10px) ;
 	}
 
 	.carousel .image:after{
@@ -140,11 +139,16 @@ font-size: 20px;
 		top: 0; left: 0; 
 		height: 100vh; 
 		width: 100%;
-		background: rgba(0, 0, 0, 0.6);
+		background: rgba(0, 0, 0, 0.3);
 		}
 .carousel-inner {
 	width: 100%;
 	height: 100vh;
+}
+
+.fleche img {
+	height: 30px;
+	width: auto;
 }
 
 /* Description evenement */
@@ -172,7 +176,7 @@ font-size: 20px;
 	top: 0px;
 	margin-top: 15px;
 	left: 0;
-	height: 400px;
+	height: 350px;
 	width: auto;
 	display: inline-block;
 	
@@ -197,7 +201,7 @@ display: inline-block;
 width: 30%;
 list-style: none;
 line-height: 1;
-font-size: 30px;
+font-size: 25px;
 }
 .jour-mois li {
 	line-height: 0,5;
@@ -205,7 +209,7 @@ font-size: 30px;
 
 .date {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 75px;
+	font-size: 65px;
 	font-weight: 50;
 	font-weight : thin ;
 }
@@ -221,7 +225,7 @@ font-size: 30px;
 	
 .titre {
 	line-height: 1;
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: 400;
 }
 .auteur {
@@ -238,9 +242,10 @@ font-size: 30px;
 	padding-top: 50px;
 	font-size: 20px;
 	font-family: 'Montserrat' sans-serif;
-	font-weight: 100;
+	font-weight: 50;
+	font-weight: thin;
+	
 
-	height: 100vh;
 }
 
 
@@ -348,7 +353,7 @@ font-size: 130%;
 	font-size: 15px;
 }
 	
-a:hover
+.elise a:hover
 {
 text-decoration: underline;
 color: #fff;
