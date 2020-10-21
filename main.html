@@ -2,93 +2,143 @@
 
 <head>
 
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <html lang="fr-France">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--CSS Bootstrap -->
+  <!--CSS Bootstrap -->
 
-<link rel="stylesheet" href="scripts/style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="scripts/js/bootstrap.bundle.min.js" >
+  <link rel="stylesheet" href="scripts/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="scripts/js/bootstrap.bundle.min.js">
 
-<!-- jQuery and JS bundle w/ Popper.js -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-<title>Cinéma Le Festival</title>
+  <title>Cinéma Le Festival</title>
 
 </head>
-  
+
 <body>
- <!-- Menu -->
-<div class="header" id="myHeader">
-<header id="header" role="banner" class="main-header ">
+  <!-- Menu -->
+  <div class="header" id="myHeader">
+    <header id="header" role="banner" class="main-header ">
 
-    <div class="header-inner">
-   
-      <div class="header-logo">
-        <a href=""><img src="images/logo2.png" alt="LOGO" ></a>
+      <div class="header-inner">
+
+        <div class="header-logo">
+          <a href=""><img src="images/logo2.png" alt="LOGO"></a>
+        </div>
+
+        <nav class="header-nav">
+
+          <ul>
+            <li><a href="#" title="A l'affiche">À L'AFFICHE</a></li>
+            <li><a href="#" title="A Propos">À PROPOS</a></li>
+            <li><a href="#" title="Tarifs">TARIFS</a></li>
+          </ul>
+
+        </nav>
+
+
+
       </div>
-         
-         <nav class="header-nav">
-      
-        <ul>          
-          <li><a href="#">À L'AFFICHE</a></li>
-          <li><a href="#">À PROPOS</a></li>
-          <li><a href="#">TARIFS</a></li>
-        </ul>
+    </header>
 
-      </nav>
-      
-    
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </div>
+
+
+  <!-- slideshow -->
+  <div class="slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!-- Indicateurs bas slider-->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <!-- Images slider-->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <a href=""><img src="images/homme.jpg" class="d-block w-100" alt="..."></a>
+        </div>
+
+        <div class="carousel-item">
+          <a href=""><img src="images/mashup.jpg" class="d-block w-100" alt="..."></a>
+        </div>
+
+        <div class="carousel-item">
+          <a href=""><img src="images/96016518_small.jpg" class="d-block w-100" alt="..."></a>
+        </div>
+
+      </div>
+
+      <!-- Flèches slider-->
+      <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
 
     </div>
-  </header>
 
-  <script type="text/javascript" src="scripts/script.js"></script>
- </div>
-
-
-<!-- slideshow -->
-<div class="slider">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-<!-- Indicateurs bas slider-->
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
- <!-- Images slider-->
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <a href=""><img src="images/homme.jpg" class="d-block w-100" alt="..."></a>
+    <!-- Création du A Propos et des titres en gras-->
+    <section class="info">
+      <div class="background">
+        <div class="blocks">
+          <div class="block">
+            <h2 title="spécialié">Spécialité</h2>
+            <p>L'unique cinéma<br>
+              exclusivement consacrée<br>
+              au cinéma d'animations et<br>
+              effets spéciaux
+            </p>
+          </div>
+          <div class="block">
+            <h2 title="festivals">Festivals</h2>
+            <p>Festival international du film<br>
+              d'animation "Les Nuits Magiques"<br>
+              Festival du film d'animation<br>
+              pour la petite enfance
+              "Les Ptits Cartooneurs"</p>
+          </div>
+          <div class="block">
+            <h2 title="activités">Activités</h2>
+            <p>Soirées à thème<br>
+              séance déguisées,<br>
+              anniverssire pour les enfants<br>
+              tournois de Mario Kart</p>
+          </div>
+          <div class="block">
+            <h2 title="parrain">Parrain</h2>
+            <p>Le cinéma "Le Festival<br>
+              est parrainé par le<br>
+              rélisateur Michel Ocelot</p>
+          </div>
+        </div>
+        <div class="numbers">
+          <div class="number" title="un">1</div>
+          <div class="number number-blue" title="deux">2</div>
+          <div class="number" title="trois">3</div>
+          <div class="number" title="quatre">4</div>
+        </div>
       </div>
-
-      <div class="carousel-item">
-        <a href="" ><img src="images/mashup.jpg" class="d-block w-100" alt="..."></a>
-      </div>
-
-      <div class="carousel-item">
-        <a href=""><img src="images/96016518_small.jpg" class="d-block w-100" alt="..."></a>
-      </div>
-
-    </div>
-    
-    <!-- Flèches slider-->
-    <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
- 
-
-</div>
+    </section>
 
 
 </body>
