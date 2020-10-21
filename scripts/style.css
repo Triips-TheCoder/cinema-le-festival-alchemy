@@ -10,10 +10,9 @@ html, body, ul {
 }
 
 body {
-	background-color: black;
+	font-family: Helvetica, Helvetica, Arial, sans-serif;
+	color: #F1EEDD;
 	width: 100%;
-	
-
 }
 /* menu complet */
 .header {
@@ -242,4 +241,253 @@ font-size: 30px;
 	font-weight: 100;
 
 	height: 100vh;
+}
+
+
+.tarifs {
+	padding: 80px;
+} 
+
+.bg_gradient {
+	background: linear-gradient(#01060B, #174260);
+}
+
+h1 {
+font-size: 130%;
+
+}
+.box_price{
+	background-color:black;
+	border-radius: 7%;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
+}
+
+.container_price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price_description {
+	opacity: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.title_description{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding-right: 15%;
+}
+
+.title_description p {
+	margin-top: 0;
+	font-size: 12px;;
+	font-family: "HelveticaNeue-Thin", "Helvetica Neue";
+	
+}
+
+.title_description h1 {
+	margin-bottom: 0;
+	font-size: 20px;;
+}
+
+.price_description > p {
+	font-style: bold;
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	font-size: 20px;
+}
+
+.tarifs h3 {
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	font-size: 58px;
+}
+
+.footer {
+	padding: 20px 150px;
+}
+
+.footer h1{
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+	font-size: 20px;
+}
+
+.footer p{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+	font-size: 15px;
+}
+
+.onglet {
+	display: flex;
+	justify-content: space-between;
+}
+
+.partnership li{
+	display: flex;
+	justify-content: center;
+}
+
+.copyright span {
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+ul {
+	list-style-type: none;
+}
+	
+a {
+	text-decoration:none; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+	color: white;
+	font-size: 15px;
+}
+	
+a:hover
+{
+text-decoration: underline;
+color: #fff;
+}
+
+.image_footer ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.image_footer img {
+	width: 50px;
+	height: 35px;
+}
+
+.separator {
+	width: 300px;
+	height: 2px;
+	background: #fff;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border-radius: 4px;
+}
+
+#etoile{
+	display: flex;
+	flex-direction: row;
+	margin-top: -30px;
+	justify-content: space-between;
+}
+
+#date {
+	display: flex;
+	flex-direction: row;
+}
+
+#date h3 {
+	font-size: 35px;
+}
+
+
+#date span{
+	vertical-align: baseline;
+	font-size: 15px;
+	font-family: "HelveticaNeue-bolditalic", "Helvetica Neue";
+}
+
+#number{
+	font-family: "HelveticaNeue-ultralight", "Helvetica Neue";
+	font-size: 110px;
+	margin-bottom: 0;
+	margin-top: -30px;
+}
+
+.film_title h3{
+	font-size: 80px;
+
+}
+.film_title {
+	padding-left: 40px;
+	padding-top: -190%;
+}
+
+#film_genre {
+	font-size: 17px;
+	font-family: "HelveticaNeue-bold", "Helvetica Neue";
+}
+
+#film_genre span{
+	font-size: 17px;
+	font-family: "HelveticaNeue-lightitalic", "Helvetica Neue";
+}
+
+.film_description p {
+	font-size: 17px;
+	font-family: "HelveticaNeue-regular", "Helvetica Neue";
+	padding-right: 45%;
+}
+
+.film_description a {
+	font-size: 15px;
+	font-family: "HelveticaNeue-bold", "Helvetica Neue";
+	background-color: white;
+	color: black;
+	border-radius: 9px;
+}
+
+.film_time {
+	font-size: 15px;
+	font-family: "HelveticaNeue-medium", "Helvetica Neue";
+	margin-top: 20px;
+}
+
+.film_time p {
+	margin-bottom: 20px;
+}
+
+.film_time a  {
+	background-color: #FFAD08;
+	border-radius: 4px;
+	color: black;
+}
+
+.actu_film {
+	padding-left: 20%;
+	padding-top: 120px;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+}
+
+.description_container {
+	display: flex;
+	flex-direction: column;
+}
+
+.block_header {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+.btn_info {
+	padding: 8px 12px;
+}
+
+.film_time ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.film_time li a {
+	padding: 4px 6px;
+}
+
+.pin_film {
+	margin-right: 20px;
 }
