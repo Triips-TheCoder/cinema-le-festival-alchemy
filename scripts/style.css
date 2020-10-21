@@ -19,7 +19,7 @@ body {
 .header {
 	position: fixed;
 	transition: top 0.9s;
-	font-size: 20px;
+	font-size: 10px;
 	width: 100%;
 	z-index: 10;
 	top : 0;
@@ -65,7 +65,7 @@ height: auto;
 /* Alignement du menu */
 .header-nav {
 margin-right: 10px;
-width: 30vw;
+width: 40vw;
 	
 }
 
@@ -77,7 +77,7 @@ width: 30vw;
 }
 .header-nav a {
 	position: relative;
-
+font-size: 20px;
 	padding: 8px 40px;
     vertical-align: middle;
 	font-weight: 300; /* entre regular et light */
@@ -145,7 +145,6 @@ width: 30vw;
 		}
 .carousel-inner {
 	width: 100%;
-<<<<<<< HEAD
 	height: 100vh;
 }
 
@@ -166,7 +165,7 @@ width: 30vw;
 }
 .description {
 	display: inline-block;
-	padding-left: 55px;
+	padding-left: 45px;
 }
 
 .pin{
@@ -174,6 +173,8 @@ width: 30vw;
 	top: 0px;
 	margin-top: 15px;
 	left: 0;
+	height: 400px;
+	width: auto;
 	display: inline-block;
 	
 	top: 0;
@@ -197,7 +198,7 @@ display: inline-block;
 width: 30%;
 list-style: none;
 line-height: 1;
-font-size: 40px;
+font-size: 30px;
 }
 .jour-mois li {
 	line-height: 0,5;
@@ -205,7 +206,7 @@ font-size: 40px;
 
 .date {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 95px;
+	font-size: 75px;
 	font-weight: 50;
 	font-weight : thin ;
 }
@@ -221,329 +222,24 @@ font-size: 40px;
 	
 .titre {
 	line-height: 1;
-	font-size: 90px;
+	font-size: 70px;
 	font-weight: 400;
 }
 .auteur {
 
 	font-style: italic;
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 20px;
 	
 	
 }
 .presentation {
 
 	line-height: 1,5;
-	padding-top: 80px;
-font-size: 30px;
+	padding-top: 50px;
+	font-size: 20px;
 	font-family: 'Montserrat' sans-serif;
 	font-weight: 100;
 
-=======
-	height: vh;
-}
-
-.background{
-	width: 100%;
-	height: 350px;
-	background-color: black;
-}
-.blocks{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	color: white;
-	height: 100%;
-}
-
-.block{
-  display: flex;
-  width: 300px;
-  align-items: center;
-  justify-content: center;
-}
-.block:nth-child(odd){
-  align-self: flex-start;
-}
-
-.block:nth-child(even){
-  align-self: flex-end;
-}
-
-.block h2{
-  padding-right: 30px;
-  width: 150px;
-}
-.block p{
-  padding-left: 10px;
-  border-left: 1px solid white;
-  width: 200px;
-}
-.numbers{
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  top: 800px;
-  left: 0;
-  width: 100%;
-}
-.number{ 
-	background-color: white;
-	color: black;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	text-align: center;
-}
-
-.tarifs {
-	padding: 80px;
-} 
-
-.bg_gradient {
-	background: linear-gradient(#01060B, #174260);
-}
-
-h1 {
-font-size: 130%;
-
-}
-.box_price{
-	background-color:black;
-	border-radius: 7%;
-	width: 50%;
-	height: 50%;
-	text-align: center;
-	padding: 20px;
-	box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
-}
-
-.container_price {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.price_description {
-	opacity: 100%;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-}
-
-.title_description{
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	padding-right: 15%;
-}
-
-.title_description p {
-	margin-top: 0;
-	font-size: 12px;;
-	font-family: "HelveticaNeue-Thin", "Helvetica Neue";
-	
-}
-
-.title_description h1 {
-	margin-bottom: 0;
-	font-size: 20px;;
-}
-
-.price_description > p {
-	font-style: bold;
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-	font-size: 20px;
-}
-
-.tarifs h3 {
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-	font-size: 58px;
-}
-
-.footer {
-	padding: 20px 150px;
-}
-
-.footer h1{
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-	font-size: 20px;
-}
-
-.footer p{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue";
-	font-size: 15px;
-}
-
-.onglet {
-	display: flex;
-	justify-content: space-between;
-}
-
-.partnership li{
-	display: flex;
-	justify-content: center;
-}
-
-.copyright span {
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-}
-
-ul {
-	list-style-type: none;
-}
-	
-a {
-	text-decoration:none; 
-	font-family: "HelveticaNeue-Light", "Helvetica Neue";
-	color: white;
-	font-size: 15px;
-}
-	
-a:hover
-{
-text-decoration: underline;
-color: #fff;
-}
-
-.image_footer ul {
-	display: flex;
-	flex-direction: row;
-}
-
-.image_footer img {
-	width: 50px;
-	height: 35px;
-}
-
-.separator {
-	width: 300px;
-	height: 2px;
-	background: #fff;
-	display: block;
-	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	border-radius: 4px;
-}
-
-#etoile{
-	display: flex;
-	flex-direction: row;
-	margin-top: -30px;
-	justify-content: space-between;
-}
-
-#date {
-	display: flex;
-	flex-direction: row;
-}
-
-#date h3 {
-	font-size: 35px;
-}
-
-
-#date span{
-	vertical-align: baseline;
-	font-size: 15px;
-	font-family: "HelveticaNeue-bolditalic", "Helvetica Neue";
-}
-
-#number{
-	font-family: "HelveticaNeue-ultralight", "Helvetica Neue";
-	font-size: 110px;
-	margin-bottom: 0;
-	margin-top: -30px;
-}
-
-.film_title h3{
-	font-size: 80px;
-
-}
-.film_title {
-	padding-left: 40px;
-	padding-top: -190%;
-}
-
-#film_genre {
-	font-size: 17px;
-	font-family: "HelveticaNeue-bold", "Helvetica Neue";
-}
-
-#film_genre span{
-	font-size: 17px;
-	font-family: "HelveticaNeue-lightitalic", "Helvetica Neue";
-}
-
-.film_description p {
-	font-size: 17px;
-	font-family: "HelveticaNeue-regular", "Helvetica Neue";
-	padding-right: 45%;
-}
-
-.film_description a {
-	font-size: 15px;
-	font-family: "HelveticaNeue-bold", "Helvetica Neue";
-	background-color: white;
-	color: black;
-	border-radius: 9px;
-}
-
-.film_time {
-	font-size: 15px;
-	font-family: "HelveticaNeue-medium", "Helvetica Neue";
-	margin-top: 20px;
-}
-
-.film_time p {
-	margin-bottom: 20px;
-}
-
-.film_time a  {
-	background-color: #FFAD08;
-	border-radius: 4px;
-	color: black;
-}
-
-.actu_film {
-	padding-left: 20%;
-	padding-top: 120px;
-	background-color: black;
-	display: flex;
-	flex-direction: row;
-}
-
-.description_container {
-	display: flex;
-	flex-direction: column;
-}
-
-.block_header {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-	align-items: flex-start;
-}
-
-.btn_info {
-	padding: 8px 12px;
-}
-
-.film_time ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.film_time li a {
-	padding: 4px 6px;
-}
-
-.pin_film {
-	margin-right: 20px;
->>>>>>> fbe63f22fe860d2d311003652d358c88183c1528
+	height: 100vh;
 }
