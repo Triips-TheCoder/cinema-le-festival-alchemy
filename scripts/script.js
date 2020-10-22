@@ -21,12 +21,21 @@ filmButtons.forEach(function (button, index) {
 
 function activateFilm (wantedFilmIndex) {
     const films = document.querySelectorAll('.description_container');
+    const video = document.querySelectorAll('.video_film');
     
     films.forEach(function (film, index) {
         if (index === wantedFilmIndex) {
             film.classList.add('is-active');
         } else {
             film.classList.remove('is-active');
+        }
+    });
+
+    video.forEach(function (film, index) {
+        if (index === wantedFilmIndex) {
+            film.classList.remove('video-unactive');
+        } else {
+            film.classList.add('video-unactive');
         }
     });
 
