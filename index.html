@@ -8,29 +8,16 @@
 
   <!--CSS Bootstrap -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
   <!-- jQuery and JS bundle w/ Popper.js -->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="https://kit.fontawesome.com/36dc27763f.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/36dc27763f.js" crossorigin="anonymous"></script>
-
-  
-
-  <script src="https://kit.fontawesome.com/36dc27763f.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/36dc27763f.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="scripts/style.css">
 
@@ -50,20 +37,18 @@
         </div>
 
         <nav class="header-nav nav-desktop" id="nav">
-
           <ul>
-            <li><a href="#"> <img class="icon"  src="images/pellicule.png" alt=""> À l'affiche</a></li>
-            <li><a href="#"><img  class="icon" src="images/information-sign.png" alt=""> À propos</a></li>
-            <li><a href="#tarifs"> <img class="icon" src="images/euro.png" alt=""> Tarifs</a></li>
+            <li><a href="#titre_affiche"><i class="fas fa-info"></i> <span>À l'affiche</span></a></li>
+            <li><a href="#a_propos"><i class="fas fa-film"></i> <span>À propos</span></a></li>
+            <li><a href="#tarifs"><i class="fas fa-dollar-sign"></i> <span>Tarifs</span></a></li>
           </ul>
-
         </nav>
 
         <nav class="header-nav nav-mobile" id="nav">
 
           <ul>
-            <li><a href="#"><i class="fas fa-info"></i> <span>À l'affiche</span></a></li>
-            <li><a href="#"><i class="fas fa-film"></i> <span>À propos</span></a></li>
+            <li><a href="#titre_affiche"><i class="fas fa-info"></i> <span>À l'affiche</span></a></li>
+            <li><a href="#a_propos"><i class="fas fa-film"></i> <span>À propos</span></a></li>
             <li><a href="#tarifs"><i class="fas fa-dollar-sign"></i> <span>Tarifs</span></a></li>
           </ul>
 
@@ -165,6 +150,7 @@
           <span  aria-hidden="true"><img src="images/next.png" alt=""></span>
           <span class="sr-only">Next</span>
         </a>
+
 
 
       </div>
@@ -519,7 +505,7 @@
         </div>
 
         <div class="box">
-            <div class="image_mahela"">
+            <div class="image_mahela">
                 <img src="images/affiche/ailleurs affiche.jpg" alt="Affiche Ailleurs">
             </div>
             <div class="texte">
@@ -538,7 +524,7 @@
         </div>
 
         <div class="box">
-            <div class="image_mahela"">
+            <div class="image_mahela">
                 <img src="images/affiche/baleine affiche.jpg" alt="Affiche baleine">
             </div>
             <div class="texte">
@@ -556,7 +542,7 @@
         </div>
 
         <div class="box">
-            <div class="image_mahela"">
+            <div class="image_mahela">
                 <img src="images/affiche/josep affiche.jpg" alt="Affiche Josep">
             </div>
             <div class="texte">
@@ -576,7 +562,7 @@
         </div>
 
         <div class="box">
-            <div class="image_mahela"">
+            <div class="image_mahela">
                 <img src="images/affiche/petit vampire affiche.jpg" alt="Affiche Petit vampire">
             </div>
             <div class="texte">
@@ -594,192 +580,176 @@
                 </p>
             </div>
         </div>
-
-
-
-    </section>
-
+      </section>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- Page de Tarifs -->
-    <div class="tarifs" id="tarifs">
-      <!--Titre de la page tarifs-->
-      <div>
-        <h3>TARIFS</h3>
-      </div>
+<!-- Page de Tarifs -->
+<div class="tarifs" id="tarifs">
+  <!--Titre de la page tarifs-->
+  <div>
+    <h3>TARIFS</h3>
+  </div>
 
-      <!-- carré backg noir -->
-      <div class="container_price">
-        <div class="box_price">
-          <!-- tous les differents tarifs-->
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Tarifs plein (3D/2D)</h1>
-            </div>
-            <p> 7,50€ </p>
-          </div>
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Tarifs jeunes (3D/2D)</h1>
-              <p>(Pour les moins de 14 ans, sur présentation d'une pièce d'identité).</p>
-            </div>
-            <p> 5,00€ </p>
-          </div>
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Tarifs réduit pour tous (3D/2D)</h1>
-              <p>(Tarif valable pour les séances de 18h à 19h et celles du jeudi soir - hors programmation spéciale
-                - ainsi que pour les programmes de moins d'1h - et pour les groupes OVS à toutes les séances).</p>
-            </div>
-            <p> 5,50€ </p>
-
-          </div>
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Tarifs réduit</h1>
-              <p>(Etudiants, moins de 18 ans, demandeurs d'emploi, familles nombreuses, séniors, handicapés).</p>
-            </div>
-            <p> 6,00€ </p>
-          </div>
-
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Carte abonnement 10 séances pour les béglais</h1>
-              <p> (Carte valable pendant un an, pour une personne ou les membres d'une même famille,
-                sur présentation d'un justificatif de domicile).</p>
-            </div>
-            <p> 50,00€ </p>
-
-          </div>
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Carte abonnement 10 séances pour les non-béglais</h1>
-              <p> (Carte valable pendant un an, pour une personne ou les membres d'une même famille).</p>
-            </div>
-            <p> 55,00€ </p>
-
-          </div>
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Tarifs scolaires et centres de loisirs</h1>
-              <p> (Sur réservation au 05.56.51.76.60 à partir de 10 personnes, sauf séances en 3D à 4,00€ - prévoir
-                lunettes 3D).</p>
-            </div>
-            <p> 3,50€ </p>
-
-          </div>
-
-          <div class="price_description">
-            <div class="title_description">
-              <h1>Lunettes 3D</h1>
-              <p> (La paire adulte ou enfant).</p>
-            </div>
-            <p> 1,00€ </p>
-
-          </div>
+  <!-- carré backg noir -->
+  <div class="container_price">
+    <div class="box_price">
+      <!-- tous les differents tarifs-->
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Tarifs plein (3D/2D)</h1>
         </div>
-      </div>
-    </div>
-
-    <!--Footer-->
-    <div class="separator"></div>
-
-    <div class="footer">
-      <!--Plan du site-->
-      <div id="logo_footer">
-        <a href="#"><img src="images/logo2.png" id="logofooter" alt="LOGO"></a>
-      </div>
-      <div class="onglet">
-        <!--S'informer-->
-        <div class="link">
-          <h1>S'informer</h1>
-          <div>
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">À l'affiche</a></li>
-              <li><a href="#">À propos</a></li>
-              <li><a href="#tarifs">Tarifs</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--Contact-->
-        <div>
-          <h1>Contact</h1>
-          <div>
-            <p>
-              <br>Cinéma « Le Festival »
-              <br>151 boulevard ALBERT 1er
-              <br> (barrière de Bègles)
-              <br> 33130 Bègles
-              <br>☎ : 09.51.99.04.80 / 05.56.51.76.60
-              <br> @ : contact@cinemalefestival.fr
-            </p>
-            <div class="reseau">
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-facebook-f"></i>
-            </div>
-          </div>
-        </div>
-        <!--Partenaires-->
-        <div class="partnership">
-          <h1>Partenaires</h1>
-          <div>
-            <p>
-              <br> Michel OCELOT (réalisateur de Kirikou, Princes et princesses,
-              <br> Azur et Asmar, Les contes de la nuit…) est le parrain du cinéma
-              <br> Le Festival.
-              <br> Ils soutiennent le cinéma Le Festival :
-            </p>
-            <div class="image_footer">
-              <ul>
-                <li><img src="images/footer/afcae.jpg" alt=""></li>
-                <li><img src="images/footer/begles.jpg" alt=""></li>
-                <li><img src="images/footer/cnc.png" alt=""></li>
-                <li><img src="images/footer/creac-begles.jpg" alt=""></li>
-                <li><img src="images/footer/drac.jpg" alt=""></li>
-                <li><img src="images/footer/france-bleu-gironde.jpg" alt=""></li>
-                <li><img src="images/footer/nouvelle-aquitaine.jpg" alt=""></li>
-                <li><img src="images/footer/gironde.png" alt=""></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Copyright-->
-      <div class="copyright">
-        <p></p>© 2012 Cinéma « Le Festival » de Bègles, tout droits réservés
-        – <span>Mentions légales</span> – Site réalisé par <span>ALCHEMY</span></p>
+        <p> 7,50€ </p>
       </div>
 
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Tarifs jeunes (3D/2D)</h1>
+          <p>(Pour les moins de 14 ans, sur présentation d'une pièce d'identité).</p>
+        </div>
+        <p> 5,00€ </p>
+      </div>
+
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Tarifs réduit pour tous (3D/2D)</h1>
+          <p>(Tarif valable pour les séances de 18h à 19h et celles du jeudi soir - hors programmation spéciale
+            - ainsi que pour les programmes de moins d'1h - et pour les groupes OVS à toutes les séances).</p>
+        </div>
+        <p> 5,50€ </p>
+
+      </div>
+
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Tarifs réduit</h1>
+          <p>(Etudiants, moins de 18 ans, demandeurs d'emploi, familles nombreuses, séniors, handicapés).</p>
+        </div>
+        <p> 6,00€ </p>
+      </div>
+
+
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Carte abonnement 10 séances pour les béglais</h1>
+          <p> (Carte valable pendant un an, pour une personne ou les membres d'une même famille,
+            sur présentation d'un justificatif de domicile).</p>
+        </div>
+        <p> 50,00€ </p>
+
+      </div>
+
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Carte abonnement 10 séances pour les non-béglais</h1>
+          <p> (Carte valable pendant un an, pour une personne ou les membres d'une même famille).</p>
+        </div>
+        <p> 55,00€ </p>
+
+      </div>
+
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Tarifs scolaires et centres de loisirs</h1>
+          <p> (Sur réservation au 05.56.51.76.60 à partir de 10 personnes, sauf séances en 3D à 4,00€ - prévoir
+            lunettes 3D).</p>
+        </div>
+        <p> 3,50€ </p>
+
+      </div>
+
+      <div class="price_description">
+        <div class="title_description">
+          <h1>Lunettes 3D</h1>
+          <p> (La paire adulte ou enfant).</p>
+        </div>
+        <p> 1,00€ </p>
+
+      </div>
     </div>
   </div>
+</div>
+
+<!--Footer-->
+<div class="separator"></div>
+
+<div class="footer">
+  <!--Plan du site-->
+  <div id="logo_footer">
+    <a href="#"><img src="images/logo2.png" id="logofooter" alt="LOGO"></a>
+  </div>
+  <div class="onglet">
+    <!--S'informer-->
+    <div class="link">
+      <h1>S'informer</h1>
+      <div>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À l'affiche</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Contact-->
+    <div>
+      <h1>Contact</h1>
+      <div>
+        <p>
+          <br>Cinéma « Le Festival »
+          <br>151 boulevard ALBERT 1er
+          <br> (barrière de Bègles)
+          <br> 33130 Bègles
+          <br>☎ : 09.51.99.04.80 / 05.56.51.76.60
+          <br> @ : contact@cinemalefestival.fr
+        </p>
+        <div class="reseau">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+    </div>
+    <!--Partenaires-->
+    <div class="partnership">
+      <h1>Partenaires</h1>
+      <div>
+        <p>
+          <br> Michel OCELOT (réalisateur de Kirikou, Princes et princesses,
+          <br> Azur et Asmar, Les contes de la nuit…) est le parrain du cinéma
+          <br> Le Festival.
+          <br> Ils soutiennent le cinéma Le Festival :
+        </p>
+        <div class="image_footer">
+          <ul>
+            <li><img src="images/footer/afcae.jpg" alt=""></li>
+            <li><img src="images/footer/begles.jpg" alt=""></li>
+            <li><img src="images/footer/cnc.png" alt=""></li>
+            <li><img src="images/footer/creac-begles.jpg" alt=""></li>
+            <li><img src="images/footer/drac.jpg" alt=""></li>
+            <li><img src="images/footer/france-bleu-gironde.jpg" alt=""></li>
+            <li><img src="images/footer/nouvelle-aquitaine.jpg" alt=""></li>
+            <li><img src="images/footer/gironde.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Copyright-->
+  <div class="copyright">
+    <p></p>© 2012 Cinéma « Le Festival » de Bègles, tout droits réservés
+    – <span>Mentions légales</span> – Site réalisé par <span>ALCHEMY</span></p>
+  </div>
+
+</div>
+</div>
 </section>
 
 
- 
-  
+
 </body>
 <script type="text/javascript" src="scripts/script.js"></script>
 <script type="texr/javascript" src="scripts/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 
 </html>
