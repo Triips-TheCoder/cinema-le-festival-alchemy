@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100vw;
+}
+
 html,
 body,
 ul {
@@ -203,11 +207,11 @@ body {
 .titre-actu {
     position: absolute;
     top: 15vh;
-    left: 5vw;
+    left: 10vw;
     z-index: 3;
     color: white;
     text-transform: uppercase;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "HelveticaNeue-Condensedbold", sans-serif;
     font-size: 55px;
 }
 
@@ -317,8 +321,9 @@ body {
 /* Création du à Propos */
 
 .info_propos {
-    width: 100%;
-    height: 550px;
+    z-index: 4;
+    width: 100vw;
+    height: 25vw;
     background-color: black;
     display: flex;
     position: relative;
@@ -379,12 +384,12 @@ body {
 }
 
 
-/* CSS pour le 2ème texte */
+/* CSS pour le 2ème texte*/
 
 .texte-2_propos {
     position: absolute;
     margin-left: 18px;
-    top: 330px;
+    top: 35vh;
     display: flex;
     align-items: center;
 }
@@ -430,7 +435,7 @@ body {
 .texte-4_propos {
     position: absolute;
     margin-left: 40px;
-    top: 330px;
+    top: 35vh;
     display: flex;
     align-items: center;
 }
@@ -529,6 +534,13 @@ body {
 
 .footer {
     padding: 20px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_footer {
+    font-size: 10%;
+    margin-bottom: 20px;
 }
 
 .footer h1 {
@@ -539,6 +551,14 @@ body {
 .footer p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue";
     font-size: 15px;
+}
+
+#logofooter {
+    margin-left: 20px;
+    float: left;
+    max-width: 120px;
+    height: auto;
+    vertical-align: middle;
 }
 
 .onglet {
@@ -676,7 +696,7 @@ body {
     background-color: black;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .description_container {
@@ -710,10 +730,11 @@ body {
 }
 
 .actu_film {
-    height: 100vh;
+    height: 110vh;
     position: relative;
     padding-left: 0;
     padding-top: 0;
+    margin-top: -70px;
 }
 
 .films_videos {
@@ -757,7 +778,7 @@ body {
 .films_navigation {
     position: absolute;
     bottom: 30px;
-    left: 50%;
+    left: 10%;
     z-index: 2;
     display: flex;
 }
@@ -769,4 +790,130 @@ body {
 
 .film_nav.is-active {
     transform: scale(1);
+}
+
+.film_title h3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.film_title span {
+    font-size: 19px;
+    font-family: "HelveticaNeue-bold", "Helvetica Neue";
+    margin-top: -15px;
+}
+
+.video-unactive {
+    display: none;
+}
+
+.films_videos {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.film_nav img {
+    width: 172px;
+    height: 268px;
+    border-radius: 18px;
+    margin-left: 30px;
+}
+
+.film_nav:first-child img {
+    margin-left: 0px;
+}
+
+.film_nav.is-active img {
+    width: 221px;
+    height: 322px;
+}
+
+
+/* A LAFFICHE MAHELA */
+
+.image_mahela img {
+    height: 100%;
+    max-width: 200px;
+    width: auto;
+    -moz-border-image: 20px;
+    -webkit-border-image: 20px;
+    border-radius: 20px;
+}
+
+.box {
+    width: 50%;
+    height: 300px;
+    padding-left: 65px;
+    padding-bottom: 60px;
+    padding-right: 65px;
+    display: flex;
+}
+
+.container0 {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
+.synopsis {
+    font-size: 15px;
+}
+
+.realisateur {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: thin;
+}
+
+.titrerealisateurbaleine {
+    line-height: 45px;
+}
+
+.synopsis .bouton {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "HelveticaNeue-bold", "Helvetica Neue";
+    background-color: white;
+    color: black;
+    border-radius: 9px;
+    width: 75px;
+    height: 20px;
+    padding-right: 10px;
+    padding-left: 5px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+#titre_affiche {
+    font-family: "HelveticaNeue-Condensedbold", "Helvetica Neue";
+    color: white;
+    font-size: 58px;
+    margin-left: 65px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    text-transform: uppercase;
+}
+
+.titrerealisateeur h2 {
+    font-size: 45px;
+}
+
+.titrerealisateur h3 {
+    font-size: 13px;
+}
+
+.reseau i {
+    font-size: 30px;
+}
+
+.reseau i:last-child {
+    margin-left: 10px;
 }

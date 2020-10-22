@@ -2,12 +2,11 @@ var positionbase = window.scrollY;
 
 window.addEventListener("scroll", function() {
     var scollY = window.scrollY;
-
     if (scrollY < positionbase) {
         document.getElementById("myHeader").style.top = "0px";
     } else {
         document.getElementById("myHeader").style.top = "-120px";
-        if (scrollY < 100) {
+        if (scollY < 100) {
             document.getElementById("myHeader").style.top = "0px";
         }
     }
@@ -24,12 +23,21 @@ filmButtons.forEach(function(button, index) {
 
 function activateFilm(wantedFilmIndex) {
     const films = document.querySelectorAll('.description_container');
+    const video = document.querySelectorAll('.video_film');
 
     films.forEach(function(film, index) {
         if (index === wantedFilmIndex) {
             film.classList.add('is-active');
         } else {
             film.classList.remove('is-active');
+        }
+    });
+
+    video.forEach(function(film, index) {
+        if (index === wantedFilmIndex) {
+            film.classList.remove('video-unactive');
+        } else {
+            film.classList.add('video-unactive');
         }
     });
 
