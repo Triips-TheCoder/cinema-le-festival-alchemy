@@ -1,539 +1,717 @@
-
-
 /* micro reset */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-html, body, ul {
-	padding: 0; margin: 0;
+
+html,
+body,
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-	color: black;
-	width: 100%;
+    color: white;
+    width: 100%;
 }
+
+
 /* menu complet */
+
 .header {
-	position: fixed;
-	transition: top 0.9s;
-	font-size: 10px;
-	width: 100%;
-	
-	z-index: 10;
-	top: 0;
+    position: fixed;
+    transition: top 0.9s;
+    font-size: 10px;
+    width: 100%;
+    z-index: 10;
+    top: 0;
 }
 
 .nav-mobile {
-	display: none;
+    display: none;
 }
 
 .nav-mobile ul li a {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-mobile ul {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 840px) {
-	.nav-desktop {
-		display: none;
-	}
+    .nav-desktop {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+}
 
-	.nav-mobile {
-		display: block;
-	}
-  }
 
 /* logo */
+
 .header-logo {
-margin-left: 20px;
-float: left;
-vertical-align: middle;
+    margin-left: 20px;
+    float: left;
+    vertical-align: middle;
 }
 
 .header-logo img {
-	max-width: 120px;
-height: auto;
+    max-width: 120px;
+    height: auto;
 }
-.icon { 
-	vertical-align: text-top;
-	color: white;
-	width: auto;
-	height: 20px;
+
+.icon {
+    vertical-align: text-top;
+    color: white;
+    width: auto;
+    height: 20px;
 }
+
+
 /* couleur menu */
+
 .main-header {
-	color: #ffffff;
-	background : rgb(0,0,0,.5);
-	
+    color: #ffffff;
+    background: rgb(0, 0, 0, .5);
 }
 
 .header-inner {
-	display: flex;
-	width: 100%;
-	padding: 20px 20px;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
 /* Alignement du menu */
+
 .header-nav li {
-	text-transform: uppercase;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue";
-	font-size: 20px;
+    text-transform: uppercase;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue";
+    font-size: 20px;
 }
 
 .header-nav i {
-	margin-right: 5px;
-	font-size: 30px;
+    margin-right: 5px;
+    font-size: 30px;
 }
 
 .header-nav ul,
 .header-nav li {
-	display: inline;
-	list-style: none;
-	
+    display: inline;
+    list-style: none;
 }
+
 .header-nav a {
-	position: relative;
-font-size: 20px;
-	padding: 8px 40px;
-	vertical-align: bottom;
-	font-weight: 300; /* entre regular et light */
-	letter-spacing: 0.025em;
-	color: inherit;
+    position: relative;
+    font-size: 20px;
+    padding: 8px 40px;
+    vertical-align: bottom;
+    font-weight: 300;
+    /* entre regular et light */
+    letter-spacing: 0.025em;
+    color: inherit;
     text-decoration: none;
 }
-/* enlever sooulignement et couleur au survol */
-.header-nav a:hover {
-	 color: white;
-	 text-decoration: none;
- }
-/* Animation du lien */
-.header-nav a:after {
-	content: "";
-	position: absolute;
-	bottom: 0; right: 20px; left: 20px;
-	height: 2px;
-	background-color: #ffffff;
 
-	/* Préparation de l'animation */
-	opacity: 0;
-	transform: translateY(5px);
-	transition: all .4s;
+
+/* enlever sooulignement et couleur au survol */
+
+.header-nav a:hover {
+    color: white;
+    text-decoration: none;
 }
+
+
+/* Animation du lien */
+
+.header-nav a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    left: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    /* Préparation de l'animation */
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all .4s;
+}
+
+
 /* Le trait */
+
 .header-nav a:hover:after,
 .header-nav a:focus:after {
-	opacity: .6;
-	transform: translateY(0);
+    opacity: .6;
+    transform: translateY(0);
 }
 
 .header-nav a:focus {
-	outline: none;
+    outline: none;
 }
- 
 
 .sort {
-   position: absolute;
+    position: absolute;
     top: -100px;
-  }
-
-.slider {
-	z-index: 1;
 }
 
+.slider {
+    z-index: 1;
+}
 
-.carousel .image img{
-	top: 0px;
-	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-	filter: blur(10px) ;
-	}
+.carousel .image img {
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(10px);
+}
 
-	.carousel .image:after{
-		position: absolute; 
-		content: ''; 
-		display: block; 
-		top: 0; left: 0; 
-		height: 100vh; 
-		width: 100%;
-		background: rgba(0, 0, 0, 0.5);
-		}
+.carousel .image:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .carousel-inner {
-	width: 100%;
-	height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .fleche img {
-	height: 30px;
-	width: auto;
+    height: 30px;
+    width: auto;
 }
- /* Titre actu */
 
- .titre-actu {
-	 position : absolute;
-	 top: 15vh;
-	 left: 10vw;
-	 z-index: 3;
-	 color: white;
-	 text-transform: uppercase;
-	 font-family: "Helvetica Neue", sans-serif;
-	 font-size: 55px;
- }
+
+/* Titre actu */
+
+.titre-actu {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    z-index: 3;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 55px;
+}
+
+
 /* Description evenement */
+
 .text-actu {
-	position: absolute;
-	z-index: 2;
-	top: 35vh;
-	left: 35vh;
-	color :white;
+    position: absolute;
+    z-index: 2;
+    top: 35vh;
+    left: 35vh;
+    color: white;
 }
 
 .text-actu a {
-	display: inline;
-	background: none;
-	background-color: rgba(0,0,0,.0);
+    display: inline;
+    background: none;
+    background-color: rgba(0, 0, 0, .0);
 }
+
 .description {
-	display: inline-block;
-	padding-left: 45px;
+    display: inline-block;
+    padding-left: 45px;
 }
 
-.pin{
-	position: absolute;
-	top: 0px;
-	margin-top: 15px;
-	left: 0;
-	height: 350px;
-	width: auto;
-	display: inline-block;
-	
-	top: 0;
+.pin {
+    position: absolute;
+    top: 0px;
+    margin-top: 15px;
+    left: 0;
+    height: 350px;
+    width: auto;
+    display: inline-block;
+    top: 0;
 }
-.pin img{
-	vertical-align: middle;
-	top: 10vh;
-	left: 20vw;
-	position: absolute;
-	
-	color: black;
+
+.pin img {
+    vertical-align: middle;
+    top: 10vh;
+    left: 20vw;
+    position: absolute;
+    color: black;
 }
+
 .calendar {
-line-height: 1;
+    line-height: 1;
 }
-
 
 .jour-mois {
-display: inline-block;
-margin-left: 0px;
-width: 30%;
-list-style: none;
-line-height: 1;
-font-size: 25px;
+    display: inline-block;
+    margin-left: 0px;
+    width: 30%;
+    list-style: none;
+    line-height: 1;
+    font-size: 25px;
 }
 
 .jour-mois p {
-	line-height: 0.5;
-	font-family: "HelveticaNeue-Regular", "Helvetica Neue";
+    line-height: 0.5;
+    font-family: "HelveticaNeue-Regular", "Helvetica Neue";
 }
 
 .jour {
-	text-transform: lowercase; /* Laueeeeer caaaaseeeeeeuh */
+    text-transform: lowercase;
+    /* Laueeeeer caaaaseeeeeeuh */
 }
 
 .mois {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .date {
-	font-family: "HelveticaNeue-Ultralight", "Helvetica Neue";
-	font-size: 75px;
-	font-weight : thin ;
+    font-family: "HelveticaNeue-Ultralight", "Helvetica Neue";
+    font-size: 75px;
+    font-weight: thin;
 }
-	
+
 .titre {
-	line-height: 1;
-	font-size: 60px;
-	font-weight: 400;
+    line-height: 1;
+    font-size: 60px;
+    font-weight: 400;
 }
+
 .auteur {
-	font-family: "HelveticaNeue-Mediumitalic", "Helvetica Neue";
-	font-size: 20px;
+    font-family: "HelveticaNeue-Mediumitalic", "Helvetica Neue";
+    font-size: 20px;
 }
 
 .presentation {
-
-	line-height: 1.2;
-	padding-top: 50px;
-	font-size: 20px;
-	font-family: "HelveticaNeue-Thin", "Helvetica Neue";
-	font-weight: 100;
-	height: 100vh;
+    line-height: 1.2;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue";
+    font-weight: 100;
+    height: 100vh;
 }
 
 .presentation span {
-	font-family: "HelveticaNeue-Medium", "Helvetica Neue";
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue";
 }
 
 .tarifs {
-	padding: 80px;
-} 
+    padding: 80px;
+}
+
+
+/* Création du à Propos */
+
+.info_propos {
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+.block_propos {
+    width: 25%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    flex-direction: row-reverse;
+}
+
+.numero_propos p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.numero_propos {
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+/* CSS pour le 1er texte */
+
+.texte_propos {
+    position: absolute;
+    margin-left: 21px;
+    top: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.texte_propos h2 {
+    padding-right: 30px;
+    font-size: 26px;
+    padding-left: 5px;
+}
+
+.texte_propos p {
+    border-left: 1px solid white;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* CSS pour le 2ème texte */
+
+.texte-2_propos {
+    position: absolute;
+    margin-left: 18px;
+    top: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.texte-2_propos h2 {
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.texte-2_propos p {
+    border-left: 1px solid white;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* CSS pour le 3ème texte */
+
+.texte-3_propos {
+    position: absolute;
+    margin-left: 27px;
+    top: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.texte-3_propos h2 {
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.texte-3_propos p {
+    border-left: 1px solid white;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* CSS pour le 4ème texte */
+
+.texte-4_propos {
+    position: absolute;
+    margin-left: 40px;
+    top: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.texte-4_propos h2 {
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.texte-4_propos p {
+    border-left: 1px solid white;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.block_propos h1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 40px;
+}
+
+.info_propos::before {
+    content: "";
+    width: 75%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    z-index: 2;
+}
 
 .bg_gradient {
-	background: linear-gradient(#01060B, #174260);
+    background: linear-gradient(#01060B, #174260);
 }
 
 .elise h1 {
-font-size: 130%;
-
+    font-size: 130%;
 }
-.box_price{
-	background-color:black;
-	border-radius: 7%;
-	width: 50%;
-	height: 50%;
-	text-align: center;
-	padding: 20px;
-	box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
+
+.box_price {
+    background-color: black;
+    border-radius: 7%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
 }
 
 .container_price {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price_description {
-	opacity: 100%;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
+    opacity: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-.title_description{
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	padding-right: 15%;
+.title_description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 15%;
 }
 
 .title_description p {
-	margin-top: 0;
-	font-size: 12px;;
-	font-family: "HelveticaNeue-Thin", "Helvetica Neue";
-	
+    margin-top: 0;
+    font-size: 12px;
+    ;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue";
 }
 
 .title_description h1 {
-	margin-bottom: 0;
-	font-size: 20px;;
+    margin-bottom: 0;
+    font-size: 20px;
+    ;
 }
 
-.price_description > p {
-	font-style: bold;
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-	font-size: 20px;
+.price_description>p {
+    font-style: bold;
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    font-size: 20px;
 }
 
 .tarifs h3 {
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-	font-size: 58px;
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    font-size: 58px;
 }
 
 .footer {
-	padding: 20px 150px;
+    padding: 20px 150px;
 }
 
-.footer h1{
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-	font-size: 20px;
+.footer h1 {
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    font-size: 20px;
 }
 
-.footer p{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue";
-	font-size: 15px;
+.footer p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue";
+    font-size: 15px;
 }
 
 .onglet {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
-.partnership li{
-	display: flex;
-	justify-content: center;
+.partnership li {
+    display: flex;
+    justify-content: center;
 }
 
 .copyright span {
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
 }
 
 .elise ul {
-	list-style-type: none;
+    list-style-type: none;
 }
-	
+
 .elise a {
-	text-decoration:none; 
-	font-family: "HelveticaNeue-Light", "Helvetica Neue";
-	color: white;
-	font-size: 15px;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue";
+    color: white;
+    font-size: 15px;
 }
-	
-.elise a:hover
-{
-text-decoration: underline;
-color: #fff;
+
+.elise a:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
 .image_footer ul {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .image_footer img {
-	width: 50px;
-	height: 35px;
+    width: 50px;
+    height: 35px;
 }
 
 .separator {
-	width: 300px;
-	height: 2px;
-	background: #fff;
-	display: block;
-	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	border-radius: 4px;
+    width: 300px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 4px;
 }
 
-#etoile{
-	display: flex;
-	flex-direction: row;
-	margin-top: -30px;
-	justify-content: space-between;
+#etoile {
+    display: flex;
+    flex-direction: row;
+    margin-top: -30px;
+    justify-content: space-between;
 }
 
 #date {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 #date h3 {
-	font-size: 35px;
+    font-size: 35px;
 }
 
-
-#date span{
-	vertical-align: baseline;
-	font-size: 15px;
-	font-family: "HelveticaNeue-bolditalic", "Helvetica Neue";
+#date span {
+    vertical-align: baseline;
+    font-size: 15px;
+    font-family: "HelveticaNeue-bolditalic", "Helvetica Neue";
 }
 
-#number{
-	font-family: "HelveticaNeue-ultralight", "Helvetica Neue";
-	font-size: 110px;
-	margin-bottom: 0;
-	margin-top: -30px;
+#number {
+    font-family: "HelveticaNeue-ultralight", "Helvetica Neue";
+    font-size: 110px;
+    margin-bottom: 0;
+    margin-top: -30px;
 }
 
-.film_title h3{
-	font-size: 80px;
-
+.film_title h3 {
+    font-size: 80px;
 }
+
 .film_title {
-	padding-left: 40px;
-	padding-top: -190%;
+    padding-left: 40px;
+    padding-top: -190%;
 }
 
 #film_genre {
-	font-size: 17px;
-	font-family: "HelveticaNeue-bold", "Helvetica Neue";
+    font-size: 17px;
+    font-family: "HelveticaNeue-bold", "Helvetica Neue";
 }
 
-#film_genre span{
-	font-size: 17px;
-	font-family: "HelveticaNeue-lightitalic", "Helvetica Neue";
+#film_genre span {
+    font-size: 17px;
+    font-family: "HelveticaNeue-lightitalic", "Helvetica Neue";
 }
 
 .film_description p {
-	font-size: 17px;
-	font-family: "HelveticaNeue-regular", "Helvetica Neue";
-	padding-right: 45%;
+    font-size: 17px;
+    font-family: "HelveticaNeue-regular", "Helvetica Neue";
+    padding-right: 45%;
 }
 
 .film_description a {
-	font-size: 15px;
-	font-family: "HelveticaNeue-bold", "Helvetica Neue";
-	background-color: white;
-	color: black;
-	border-radius: 9px;
+    font-size: 15px;
+    font-family: "HelveticaNeue-bold", "Helvetica Neue";
+    background-color: white;
+    color: black;
+    border-radius: 9px;
 }
 
 .film_time {
-	font-size: 15px;
-	font-family: "HelveticaNeue-medium", "Helvetica Neue";
-	margin-top: 20px;
+    font-size: 15px;
+    font-family: "HelveticaNeue-medium", "Helvetica Neue";
+    margin-top: 20px;
 }
 
 .film_time p {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.film_time a  {
-	background-color: #FFAD08;
-	border-radius: 4px;
-	color: black;
+.film_time a {
+    background-color: #FFAD08;
+    border-radius: 4px;
+    color: black;
 }
 
 .actu_film {
-	padding-left: 20%;
-	padding-top: 120px;
-	background-color: black;
-	display: flex;
-	flex-direction: row;
-	overflow-x: hidden;
+    padding-left: 20%;
+    padding-top: 120px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
 }
 
 .description_container {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .block_header {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-	align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
 }
 
 .btn_info {
-	padding: 8px 12px;
+    padding: 8px 12px;
 }
 
 .film_time ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .film_time li a {
-	padding: 4px 6px;
+    padding: 4px 6px;
 }
 
 .pin_film {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 .actu_film {
-    height:100vh;
-    position: relative; 
+    height: 100vh;
+    position: relative;
     padding-left: 0;
     padding-top: 0;
 }
@@ -560,7 +738,7 @@ color: #fff;
     display: flex;
     padding-left: 20%;
     padding-top: 120px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
 }
 
