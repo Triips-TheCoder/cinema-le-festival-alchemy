@@ -990,3 +990,11 @@ color: #fff;
 .arrow_right {
 	right: 60px;
 }
+
+.link ul {
+	list-style-type: none;
+}
+
+.link ul a {
+	color: #fff;
+}
