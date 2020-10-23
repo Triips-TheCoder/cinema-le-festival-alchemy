@@ -226,12 +226,13 @@
       <!-- Page de Films -->
       <div class="actu_film">
         <div class="films_videos">
+          <video src="video/petit-vampire-bande-annonce-officielle-joann-sfar-2020.mp4"autoplay
+                loop muted playsinline class="video_film "></video>
             <video src="video/calamity-une-enfance-de-martha-jane-cannary-bande-annonce-exclu copie.mp4"autoplay
-                loop muted playsinline class="video_film"></video>
+                loop muted playsinline class="video_film video-unactive"></video>
             <video src="video/bande-annonce-josep-de-aurel.mp4"autoplay
                 loop muted playsinline class="video_film video-unactive"></video>
-            <video src="video/petit-vampire-bande-annonce-officielle-joann-sfar-2020.mp4"autoplay
-                loop muted playsinline class="video_film video-unactive"></video>
+            
             <video src="video/ailleurs-bande-annonce-vostfr.mp4"autoplay
                 loop muted playsinline class="video_film video-unactive"></video>         
             <video src="video/blanche-neige-les-souliers-rouges-et-les-7-nains-bande-annonce-vf-2020.mp4"autoplay
@@ -249,6 +250,7 @@
             </div>
             <div class="descriptions_container">
                 <div class="description_container is-active">
+
                     <div id="date">
                         <h3>Aujourd'hui <span>23 octobre</span></h3>
                     </div>
@@ -257,6 +259,42 @@
                         <div class="block_header">
                             <div class="number_star">
                                 <p id="number">01</p>
+                                <ul id="etoile">
+                                    <li><img src="images/star/yellow.svg" alt=""></li>
+                                    <li><img src="images/star/yellow.svg" alt=""></li>
+                                    <li><img src="images/star/yellow.svg" alt=""></li>
+                                    <li><img src="images/star/yellow.svg" alt=""></li>
+                                    <li><img src="images/star/yellow.svg" alt=""></li>
+                                </ul>
+                                <div class="film_time">
+                                    <p>Horaires:</p>
+                                    <ul>
+                                        <li><a href="synopsis.html">18h00 </a></li>
+                                        <li><a href="synopsis.html"> 21h00</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="film_title">
+                                <h3>Petit-Vampire</h3>
+                                <p id="film_genre">Genre:<span> Animation, Cinéma de fantasy </span></p>
+                                <div class="film_description">
+                                    <p>Petit Vampire vit dans une maison hantée avec une joyeuse bande de monstres, mais il s’ennuie terriblement… Cela fait maintenant 300 ans qu’il a 10 ans, alors les bateaux…</p>
+                                    <a href="synopsis.html" class="btn_info">+ d'infos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="description_container">
+                    <div id="date">
+                        <h3>Aujourd'hui <span>23 octobre</span></h3>
+                    </div>
+                    <!--En tête-->
+                    <div>
+                        <div class="block_header">
+                            <div class="number_star">
+                                <p id="number">02</p>
                                 <ul id="etoile">
                                     <li><img src="images/star/yellow.svg" alt=""></li>
                                     <li><img src="images/star/yellow.svg" alt=""></li>
@@ -295,7 +333,7 @@
                   <div>
                       <div class="block_header">
                           <div class="number_star">
-                              <p id="number">02</p>
+                              <p id="number">03</p>
                               <ul id="etoile">
                                   <li><img src="images/star/yellow.svg" alt=""></li>
                                   <li><img src="images/star/yellow.svg" alt=""></li>
@@ -324,42 +362,6 @@
                   </div>
               </div>
              
-              <div class="description_container">
-                  
-                  <div id="date">
-                      <h3>Aujourd'hui <span>23 octobre</span></h3>
-                  </div>
-                  <!--En tête-->
-                  <div>
-                      <div class="block_header">
-                          <div class="number_star">
-                              <p id="number">03</p>
-                              <ul id="etoile">
-                                  <li><img src="images/star/yellow.svg" alt=""></li>
-                                  <li><img src="images/star/yellow.svg" alt=""></li>
-                                  <li><img src="images/star/yellow.svg" alt=""></li>
-                                  <li><img src="images/star/yellow.svg" alt=""></li>
-                                  <li><img src="images/star/yellow.svg" alt=""></li>
-                              </ul>
-                              <div class="film_time">
-                                  <p>Horaires:</p>
-                                  <ul>
-                                      <li><a href="synopsis.html">18h00 </a></li>
-                                      <li><a href="synopsis.html"> 21h00</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                          <div class="film_title">
-                              <h3>Petit-Vampire</h3>
-                              <p id="film_genre">Genre:<span> Animation, Cinéma de fantasy </span></p>
-                              <div class="film_description">
-                                  <p>Petit Vampire vit dans une maison hantée avec une joyeuse bande de monstres, mais il s’ennuie terriblement… Cela fait maintenant 300 ans qu’il a 10 ans, alors les bateaux…</p>
-                                  <a href="synopsis.html" class="btn_info">+ d'infos</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
   
               <div class="description_container">
                   <div id="date">
@@ -446,13 +448,15 @@
           </div>
           <div class="films_navigation">
               <div class="film_nav is-active">
-                  <img src="images/affiche/calamity affiche.jpg">
-              </div>
-              <div class="film_nav">
-                  <img src="images/affiche/josep affiche.jpg" alt="">
-              </div>
-              <div class="film_nav">
                 <img src="images/affiche/petit vampire affiche.jpg" alt="">
+              </div>
+              <div class="film_nav">
+                <img src="images/affiche/calamity affiche.jpg">
+                 
+              </div>
+              <div class="film_nav">
+                <img src="images/affiche/josep affiche.jpg" alt="">
+              
             </div> <div class="film_nav">
                 <img src="images/affiche/ailleurs affiche.jpg" alt="">
             </div> <div class="film_nav">
