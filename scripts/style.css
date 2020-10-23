@@ -975,3 +975,18 @@ color: #fff;
 .footer .link ul {
 	margin-top: 29px;
 }
+
+.arrow {
+	position: absolute;
+	bottom: 180px;
+	cursor: pointer;
+	z-index: 99999;
+}
+
+.arrow_left {
+	left: 60px;
+}
+
+.arrow_right {
+	right: 60px;
+}

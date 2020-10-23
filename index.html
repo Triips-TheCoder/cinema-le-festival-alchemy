@@ -222,8 +222,6 @@
   
 <!--A PROPOS-->
 
-  <section class="elise">
-    <!-- Page de Films -->
     <section class="elise">
       <!-- Page de Films -->
       <div class="actu_film">
@@ -440,25 +438,37 @@
             
         </div>
         <!-- Film déroulant-->
-        <div class="films_navigation">
-            <div class="film_nav is-active">
-                <img src="images/affiche/calamity affiche.jpg">
-            </div>
-            <div class="film_nav">
-                <img src="images/affiche/josep affiche.jpg" alt="">
-            </div>
-            <div class="film_nav">
-              <img src="images/affiche/petit vampire affiche.jpg" alt="">
-          </div> <div class="film_nav">
-              <img src="images/affiche/ailleurs affiche.jpg" alt="">
-          </div> <div class="film_nav">
-              <img src="images/affiche/blanche neige affiche.jpg" alt="">
+        <div class="container_films_navigation">
+          <div class="arrow arrow_left" id="arrow_left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.664" height="27.413" viewBox="0 0 16.664 27.413">
+              <path id="fleche_right" data-name="fleche right" d="M-139.565-72.9h0l-12.349-12.51,6.326-5.464,6.023-5.2" transform="translate(154.108 98.197)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+            </svg>            
           </div>
-
+          <div class="films_navigation">
+              <div class="film_nav is-active">
+                  <img src="images/affiche/calamity affiche.jpg">
+              </div>
+              <div class="film_nav">
+                  <img src="images/affiche/josep affiche.jpg" alt="">
+              </div>
+              <div class="film_nav">
+                <img src="images/affiche/petit vampire affiche.jpg" alt="">
+            </div> <div class="film_nav">
+                <img src="images/affiche/ailleurs affiche.jpg" alt="">
+            </div> <div class="film_nav">
+                <img src="images/affiche/blanche neige affiche.jpg" alt="">
+            </div>
+          </div>
+          <div class="arrow arrow_right" id="arrow_right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.664" height="27.413" viewBox="0 0 16.664 27.413">
+              <path id="fleche_right" data-name="fleche right" d="M-151.914-72.9h0l12.349-12.51-6.326-5.464-6.023-5.2" transform="translate(154.035 98.197)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+            </svg>            
+          </div>
         </div>
     </div>
+  </section>
   
-    <script src="scripts/filmSlider.js"></script>
+    <!--<script src="scripts/filmSlider.js"></script>-->
     <div class="bg_gradient">
 
     <!--A LAFFICHE -->
@@ -752,14 +762,13 @@
 </div>
 </section>
 
-
-
-</body>
 <script type="text/javascript" src="scripts/script.js"></script>
 <script type="texr/javascript" src="scripts/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+</body>
 
 
 </html>

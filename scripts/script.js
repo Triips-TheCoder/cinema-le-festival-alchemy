@@ -49,3 +49,17 @@ function activateFilm(wantedFilmIndex) {
         }
     });
 }
+
+// Function movie film animation
+
+const arrowLeft = document.getElementById('arrow_left');
+const arrowRight = document.getElementById('arrow_right');
+const filmNav = document.getElementsByClassName('films_navigation');
+
+arrowLeft.addEventListener('click', (event) => {
+    console.log(filmNav)
+})
+
+arrowRight.addEventListener('click', (event) => {
+    console.log('click')
+})
