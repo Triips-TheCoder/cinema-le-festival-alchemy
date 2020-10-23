@@ -5,7 +5,7 @@ window.addEventListener("scroll", function() {
     if (scrollY < positionbase) {
         document.getElementById("myHeader").style.top = "0px";
     } else {
-        document.getElementById("myHeader").style.top = "-120px";
+        doscument.getElementById("myHeader").style.top = "-120px";
         if (scollY < 100) {
             document.getElementById("myHeader").style.top = "0px";
         }
@@ -54,12 +54,26 @@ function activateFilm(wantedFilmIndex) {
 
 const arrowLeft = document.getElementById('arrow_left');
 const arrowRight = document.getElementById('arrow_right');
-const filmNav = document.getElementsByClassName('films_navigation');
+const filmNav = document.querySelector('.films_navigation');
+let filmIndex = -1
+const offset = -10
 
 arrowLeft.addEventListener('click', (event) => {
-    console.log(filmNav)
+    filmIndex -= 1
+    if (filmIndex == -2) {
+        filmIndex += 1;
+        return;
+    }
+    filmNav.style.left = (offset * filmIndex) + "%"
+    activateFilm(filmIndex)
 })
 
 arrowRight.addEventListener('click', (event) => {
-    console.log('click')
+    filmIndex += 1
+    if (filmIndex == 5) {
+        filmIndex -= 1;
+        return;
+    }
+    filmNav.style.left = (offset * filmIndex) + "%"
+    activateFilm(filmIndex)
 })

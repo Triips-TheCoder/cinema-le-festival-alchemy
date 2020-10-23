@@ -281,7 +281,7 @@ hr {
 }
 
 .mesure_text p {
-    font-size: 15px;
+    font-size: 20px;
     margin-block-end: 0px;
     font-family: "HelveticaNeue-regular", "Helvetica Neue";
 }
@@ -294,7 +294,7 @@ hr {
 }
 
 .mesure .mesure_explain {
-    font-size: 13px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.637);
     font-family: "HelveticaNeue-thinitalic", "Helvetica Neue";
 }
