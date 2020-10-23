@@ -25,6 +25,7 @@ ul {
 body {
 	color: white;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 /* menu complet */
@@ -35,7 +36,14 @@ body {
 	width: 100%;
 	
 	z-index: 10;
+}
+
+.header-top {
 	top: 0;
+}
+
+.header-bottom {
+	bottom: 0;
 }
 
 .nav-mobile {
@@ -43,14 +51,18 @@ body {
 }
 
 .nav-mobile ul li a {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 40px;
 }
 
-.nav-mobile ul {
-	display: flex;
-	flex-direction: row;
+.nav-mobile ul li span {
+	font-size: 14px;
+}
+
+.nav-mobile {
+	background : rgb(0,0,0,.8);
 }
 
 @media screen and (max-width: 840px) {
