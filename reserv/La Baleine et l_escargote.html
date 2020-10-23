@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>La Baleine et l'escargote</title>
+        <link rel="stylesheet" href="style4.css">
+
+        <link rel="stylesheet" href="scripts/css/vanilla-calendar-min.css">
+    <link rel="stylesheet" href="scripts/reservation.css">
+    <script src="scripts/js/vanilla-calendar-min.js"></script>
+    </head>
+    <body>
+    <!-- Informations sur le film -->
+    <div  id="information"class="background-img"></div>
+    <section class="information">
+    <div class="container">
+        <div class="infos-film">
+            <div class="box">
+                </div>
+                <div class="titre">
+                    <h1>La Baleine et l'escargote</h1>
+                </div>                  
+                <div class="infos">
+                    <p>Avis : <span><img src="images/stars3.png" id="stars" alt="image-etoile"></span></p>
+                    <p>Format : <span><img src="images/3D.png" id="logo" alt="logo-2d"></span></p>
+                    <p>Genre : <span class="animation"> Animation, Famille</span></p>
+                    <p>Pays : <span class="pays">Britannique, Tchèque, Suisse</span></p>
+                    <p>Durée : <span class="durée"> 40min</span></p>
+                    <p>Réalisateur :<span class="réalisateur"> Max Lang, Daniel Snaddon</span></p>
+                    <a id="bouton" href="#reservation_page"><img class="bouton" src="images/bouton.png" x alt="bouton-de-reservation"></a>                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+        <!-- Synopsis -->
+    <section class="Synopsis">
+        <div class="container2">
+            <div class="infos-film">
+                <div class="box">
+                    </div>
+                    <div class="titre2">
+                        <h1>Synopsis</h1>
+                    </div>                  
+                    <div class="infos2">
+                        <p> Une petite escargote de mer s’ennuie sur le rocher d’un vieux port et rêve de parcourir le monde. Un jour, une grande baleine à bosse lui propose de l’emmener en voyage à travers les océans du globe. Cette amitié insolite nous plonge dans une odyssée fabuleuse au cœur de la nature, de l’infiniment petit à l’infiniment grand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>   
+        <div id="reservation_page" class="reservation_page">
+            <a class="reservation_page_return" href="#information"><img id="return" src="images/left-arrow.png" alt="return"></a>
+    
+            <h2 class="select_seance_title">Sélectionnez votre séance :</h2>
+            <section class="calendrier">
+                <div class="content">
+                    <div id="myCalendar" class="vanilla-calendar" style="margin-bottom: 20px"></div>
+    
+    
+                    <script>
+                        let pastDates = true,
+                            availableDates = false,
+                            availableWeekDays = false
+    
+                        let calendar = new VanillaCalendar({
+                            selector: "#myCalendar",
+                            months: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"],
+                            shortWeekday: ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'],
+                            onSelect: (data, elem) => {
+                                console.log(data, elem)
+                            }
+                        })
+    
+                        let btnPastDates = document.querySelector('[name=pastDates]')
+                        btnPastDates.addEventListener('click', () => {
+                            pastDates = !pastDates
+                            calendar.set({
+                                pastDates: pastDates
+                            })
+                            btnPastDates.innerText = `${(pastDates ? 'Disable' : 'Enable')} past dates`
+                        })
+    
+                        let btnAvailableDates = document.querySelector('[name=availableDates]')
+                        btnAvailableDates.addEventListener('click', () => {
+                            availableDates = !availableDates
+                            btnAvailableDates.innerText = `${(availableDates ? 'Clear available dates' : 'Set available dates')}`
+                            if (!availableDates) {
+                                calendar.set({
+                                    availableDates: [],
+                                    datesFilter: false
+                                })
+                                return
+                            }
+                            let dates = () => {
+                                let result = []
+                                for (let i = 1; i < 15; ++i) {
+                                    if (i % 2) continue
+                                    let date = new Date(new Date().getTime() + (60 * 60 * 24 * 1000) * i)
+                                    result.push({
+                                        date: `${String(date.getFullYear())}-${String(date.getMonth() + 1).padStart(2, 0)}-${String(date.getDate()).padStart(2, 0)}`
+                                    })
+                                }
+                                return result
+                            }
+                            calendar.set({
+                                availableDates: dates(),
+                                availableWeekDays: [],
+                                datesFilter: true
+                            })
+                        })
+    
+                        let btnAvailableWeekDays = document.querySelector('[name=availableWeekDays]')
+                        btnAvailableWeekDays.addEventListener('click', () => {
+                            availableWeekDays = !availableWeekDays
+                            btnAvailableWeekDays.innerText = `${(availableWeekDays ? 'Clear available weekdays' : 'Set available weekdays')}`
+                            if (!availableWeekDays) {
+                                calendar.set({
+                                    availableWeekDays: [],
+                                    datesFilter: false
+                                })
+                                return
+                            }
+                            let days = [{
+                                day: 'Lundi'
+                            }, {
+                                day: 'Mardi'
+                            }, {
+                                day: 'Mercre'
+                            }, {
+                                day: 'Vendredi'
+                            }]
+                            calendar.set({
+                                availableWeekDays: days,
+                                availableDates: [],
+                                datesFilter: true
+                            })
+                        })
+                    </script>
+    
+                    <div class="reserve_heures">
+                        <p class="horaire_reserve">Horaire :</p>
+                        <p class="heure_reserve">19:00</p>
+                        <p class="heure_reserve">21:00</p>
+                    </div>
+                    <div class="mesure">
+                        <p class="mesure_text">Mesures sanitaires :</p>
+                        <p class="mesure_explain">Le port du masque obligatoire à partir de 11 ans dans le hall, dans les salles (pendant toute la durée de la séance) <br> et les toilettes Dans les salles espacements d'un fauteuil vide entre chaque spectateur ou groupe familial...
+                           
+                        </p>
+                    </div>
+    
+                </div>
+            </section>
+    
+    
+            <div class="places">
+                <img class="ecran" src="images/écran2.png" alt="">
+                <p class="ecran_text">Ecran</p>
+    
+                <div class="places_left">
+    
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                </div>
+                <div id="placed" class="places_right">
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+                    <a class="place_black_right" href=""><img src="images/siege_noir.png" alt="Choix d'une place"></a>
+                    <a class="place_white_right" href=""><img src="images/siege_blanc.png" alt="Choix d'une place"></a>
+    
+    
+                </div>
+    
+            </div>
+            <div class="explain_place">
+                <h class="explain_text"><img src="images/siege_blanc.png" alt="Place libre"> : Libre</h>
+                <h class="explain_text place_black"><img src="images/siege_noir.png" alt="Place libre"> : Réservé</h>
+            </div>
+    
+    
+            
+    
+            <div class="paiement"><img class="paie" src="images/mastercard_logo_icon_145418.png" alt=""><img class="paie" src="images/visa-512 (1).png" alt=""></div>
+            <hr class="line">
+    
+            <a class="reserve_btn" href=""><img src="images/reserve_btn.png" alt=""></a>
+        </div>
+        <script type="text/javascript">
+
+            document.getElementById('bouton').addEventListener('click', function () {
+    
+                document.getElementById('reservation_page').style.display = 'block'
+    
+            })
+            document.getElementById('return').addEventListener('click', function () {
+                setTimeout(function () {
+                    document.getElementById('reservation_page').style.display = 'none'
+                }, 700)
+    
+            })
+    
+        </script>
+    </div>        
+    </body>
+</html>

@@ -1,18 +1,16 @@
 :root {
-    --vanilla-calendar-bg-color: transparent;
-    --vanilla-calendar-border-radius: 15px;
-    --vanilla-calendar-border-color: rgba(255, 255, 255, 0.226);
-    --vanilla-calendar-today-bg-color: #FFAD08 ;
-    --vanilla-calendar-today-color: white;
-    --vanilla-calendar-selected-bg-color:#ffffff8a;
-    --vanilla-calendar-selected-color: white;
-    --vanilla-calendar-selected-radius: 15px
+    --vanilla-calendar-bg-color: #fff;
+    --vanilla-calendar-border-radius: 5px;
+    --vanilla-calendar-border-color: #e7e9ed;
+    --vanilla-calendar-today-bg-color: #E7E9ED;
+    --vanilla-calendar-today-color: #333;
+    --vanilla-calendar-selected-bg-color: #538fcd;
+    --vanilla-calendar-selected-color: #fff;
+    --vanilla-calendar-selected-radius: 5px;
 }
 
-.vanilla-calendar *,
-.vanilla-calendar *:before,
-.vanilla-calendar *:after {
-    box-sizing: border-box
+.vanilla-calendar *, .vanilla-calendar *:before, .vanilla-calendar *:after {
+    box-sizing: border-box;
 }
 
 .vanilla-calendar {
@@ -22,29 +20,25 @@
     box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
     margin: 0 auto;
     overflow: hidden;
-    width: 300px
+    width: 350px;
 }
-
-@media(max-width:1200px) {
+@media (max-width:1200px) {
     .vanilla-calendar {
-        position: absolute;
         width: auto;
-        left: 0;
     }
 }
-
 .vanilla-calendar .vanilla-calendar-btn {
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-appearance: button;
-    background: 0;
+    background: none;
     border: 0;
     color: inherit;
     cursor: pointer;
     font: inherit;
     line-height: normal;
     min-width: 27px;
-    outline: 0;
+    outline: none;
     overflow: visible;
     padding: 0;
     text-align: center;
@@ -58,41 +52,35 @@
     align-items: center;
     display: flex;
     padding: 10px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .vanilla-calendar .vanilla-calendar-header svg {
-    fill: var(--vanilla-calendar-today-color)
+    fill: var(--vanilla-calendar-today-color);
 }
 
 .vanilla-calendar .vanilla-calendar-header__label {
-    font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
     width: 100%;
-    color: white;
 }
 
 .vanilla-calendar .vanilla-calendar-week {
-    background-color: none;
-    border-top: solid 1px rgba(255, 255, 255, 0.226);
-    border-bottom: solid 1px rgba(255, 255, 255, 0.226);
+    background-color: var(--vanilla-calendar-selected-bg-color);
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .vanilla-calendar .vanilla-calendar-week span {
     color: var(--vanilla-calendar-selected-color);
     flex-direction: column;
     flex: 0 0 14.28%;
-    font-size: 13px;
+    font-size: 1em;
+    font-weight: bold;
     max-width: 14.28%;
-    padding: 15px 0;
+    padding: 15px 0px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: medium;
-
 }
 
 .vanilla-calendar .vanilla-calendar-body {
@@ -104,38 +92,31 @@
 
 .vanilla-calendar .vanilla-calendar-date {
     align-items: center;
-    background-color: transparent;
+    background-color: #fff;
     border-radius: var(--vanilla-calendar-border-radius);
     display: flex;
     flex-direction: column;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-style: italic;
-    font-weight: lighter;
     flex: 0 0 14.28%;
     max-width: 14.28%;
-    padding: 5px 0;
-    color: white;
+    padding: 10px 0;
 }
 
 .vanilla-calendar .vanilla-calendar-date--active {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .vanilla-calendar .vanilla-calendar-date--today {
     background-color: var(--vanilla-calendar-today-bg-color);
     color: var(--vanilla-calendar-today-color);
-    font-weight:400;
-color: black
 }
 
 .vanilla-calendar .vanilla-calendar-date--selected {
     background-color: var(--vanilla-calendar-selected-bg-color);
     color: var(--vanilla-calendar-selected-color);
-    
 }
 
 .vanilla-calendar .vanilla-calendar-date--disabled {
     border-radius: 0;
     cursor: not-allowed;
-    opacity: .2
+    opacity: 0.2;
 }

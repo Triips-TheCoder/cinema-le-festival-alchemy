@@ -2,7 +2,9 @@
 * .calendrier {
     font-family: 'Helvetiva Neue'
 }
-
+ html {
+     scroll-behavior: smooth;
+ }
 body {
     background-color: black;
 }
@@ -11,21 +13,35 @@ body {
     display: inline-block;
     position: relative;
 }
+.reservation_page{
+    transition: 1;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+    z-index: 999;
+}
+.bouton {
+    width: auto;
+    height: 30px;
+}
 
 .reservation_page_return img {
     display: inline-block;
-    vertical-align: text-bottom;
     width: auto;
-    height: 30px;
+    padding-top: 10px;
+    height: 33px;
     margin-left: 2vw;
 }
 
 .select_seance_title {
     display: inline-block;
     color: white;
+    vertical-align: super;
     font-family: "Helvetica Neue", sans-serif;
-    top: 5vh;
-    margin-left: 0;
+    margin-block-start: 5vh;
+    margin-left: 60vh;
+
 }
 
 .ecran {
@@ -42,14 +58,14 @@ body {
     font-size: 15px;
     color: white;
     left: 315px;
-    top: 30px;
+    top: px;
 }
 
 .places {
     z-index: 2;
     position: absolute;
     bottom: 40vh;
-    right: 5vw;
+    right: 10vw;
     height: 330px;
     width: 700px;
 }
@@ -119,7 +135,7 @@ body {
     width: 190px;
     color: white;
     bottom: 35vh;
-    right: 10vw;
+    right: 15vw;
 }
 
 .explain_place img {
@@ -146,7 +162,7 @@ h3 {
 
 .calendrier .content {
     top: 10vh;
-    left: 30vh;
+    left: 20vh;
     height: 500px;
     width: 300px;
     position: absolute;

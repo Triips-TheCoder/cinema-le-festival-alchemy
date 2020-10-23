@@ -63,3 +63,16 @@ arrowLeft.addEventListener('click', (event) => {
 arrowRight.addEventListener('click', (event) => {
     console.log('click')
 })
+
+
+document.getElementById('bouton').addEventListener('click', function () {
+
+    document.getElementById('reservation_page').style.display = 'block'
+
+})
+document.getElementById('return').addEventListener('click', function () {
+    setTimeout(function () {
+        document.getElementById('reservation_page').style.display = 'none'
+    }, 1000)
+
+})

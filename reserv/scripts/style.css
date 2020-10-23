@@ -86,13 +86,9 @@ vertical-align: middle;
 	max-width: 120px;
 height: auto;
 }
-.header-nav span{
-margin-left: 4px;
-vertical-align: text-top;
-	
-}
+
 .icon { 
-	vertical-align:;
+	vertical-align: text-top;
 	color: white;
 	width: auto;
 	height: 20px;

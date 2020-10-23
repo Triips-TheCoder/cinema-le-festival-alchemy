@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Blanche Neige</title>
+    <link rel="stylesheet" href="style2.css">
 
     <link rel="stylesheet" href="scripts/css/vanilla-calendar-min.css">
     <link rel="stylesheet" href="scripts/reservation.css">
@@ -11,8 +11,51 @@
 </head>
 
 <body>
+    <!-- Informations sur le film -->
+    <div id="information" class="background-img"></div>
+    <section class="information">
+        <div class="container">
+            <div class="infos-film">
+                <div class="box">
+                </div>
+                <div class="titre">
+                    <h1>Blanche Neige</h1>
+                    <p class="sous-titres">les souliers rouges et les septs nains</p>
+                </div>
+                <div class="infos">
+                    <p>Avis : <span><img src="images/stars2.png" id="stars" alt="image-etoile"></span></p>
+                    <p>Format : <span><img src="images/3D.png" id="logo" alt="logo-2d"></span></p>
+                    <p>Genre : <span class="animation"> Animation, Famille</span></p>
+                    <p>Pays : <span class="pays">Sud-Coréen</span></p>
+                    <p>Durée : <span class="durée"> 1h 32min</span></p>
+                    <p>Réalisateur :<span class="réalisateur"> Hong Sung-Ho</span></p>
+                    <a id="bouton" href="#reservation_page"><img class="bouton" src="images/bouton.png" x
+                            alt="bouton-de-reservation"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Synopsis -->
+    <section class="Synopsis">
+        <div class="container2">
+            <div class="infos-film">
+                <div class="box">
+                </div>
+                <div class="titre2">
+                    <h1>Synopsis</h1>
+                </div>
+                <div class="infos2">
+                    <p> Des princes transformés en nains viennent à l’aide d’une princesse dont la beauté est cachée
+                        dans ses souliers. Ici, le conte de fées s’amuse de notre obsession du paraître. Mais comme dans
+                        tous les contes, c’est l’amour qui sauvera tous les personnages.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <div id="reservation_page" class="reservation_page">
-        <a class="reservation_page_return" href=""><img id="return" src="images/left-arrow.png" alt="return"></a>
+        <a class="reservation_page_return" href="#information"><img id="return" src="images/left-arrow.png" alt="return"></a>
 
         <h2 class="select_seance_title">Sélectionnez votre séance :</h2>
         <section class="calendrier">
@@ -107,8 +150,10 @@
                 </div>
                 <div class="mesure">
                     <p class="mesure_text">Mesures sanitaires :</p>
-                    <p class="mesure_explain">Le port du masque obligatoire à partir de 11 ans dans le hall, dans les salles (pendant toute la durée de la séance) <br> et les toilettes Dans les salles espacements d'un fauteuil vide entre chaque spectateur ou groupe familial...
-                       
+                    <p class="mesure_explain">Le port du masque obligatoire à partir de 11 ans dans le hall, dans les
+                        salles (pendant toute la durée de la séance) <br> et les toilettes Dans les salles espacements
+                        d'un fauteuil vide entre chaque spectateur ou groupe familial...
+
                     </p>
                 </div>
 
@@ -210,15 +255,30 @@
         </div>
 
 
-        
 
-        <div class="paiement"><img class="paie" src="images/mastercard_logo_icon_145418.png" alt=""><img class="paie" src="images/visa-512 (1).png" alt=""></div>
+
+        <div class="paiement"><img class="paie" src="images/mastercard_logo_icon_145418.png" alt=""><img class="paie"
+                src="images/visa-512 (1).png" alt=""></div>
         <hr class="line">
 
         <a class="reserve_btn" href=""><img src="images/reserve_btn.png" alt=""></a>
     </div>
+    <script type="text/javascript">
 
+        document.getElementById('bouton').addEventListener('click', function () {
 
+            document.getElementById('reservation_page').style.display = 'block'
+
+        })
+        document.getElementById('return').addEventListener('click', function () {
+            setTimeout(function () {
+                document.getElementById('reservation_page').style.display = 'none'
+            }, 700)
+
+        })
+
+    </script>
+    </div>
 </body>
 
 </html>

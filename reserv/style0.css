@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+.background-img{
+    background-image: url("images/petit-vampire.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    filter: blur(4px) brightness(70%);
+}
+.container{
+    top: 3vh;
+    left: 10vw;
+    position: absolute;
+    padding: 50px 0px;
+    min-width: 30vh;
+    min-height: 30vh;
+}
+.titre{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    position: relative;
+}
+.infos{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    line-height: 50px;
+    top: 5px;
+}
+#containerIntro h1,
+#containerIntro p {
+    display: inline;
+    vertical-align: top;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.desc {
+    display: inline-block;
+}
+#stars{
+    width: 235px;
+    position: absolute;
+    bottom: 211px;
+    left: 40px;
+}
+#logo{
+    width: 40px;
+    padding-left: 10px;
+    position: absolute;
+    top: 62px;
+}
+span.animation{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+span.pays{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+span.durée{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+span.réalisateur{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+.container2{
+    top: 3vh;
+    left: 56vw;
+    right: 8vw;
+    position: absolute;
+    padding: 50px 0px;
+    min-width: 30vh;
+    min-height: 30vh;
+}
+.titre2{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+}
+.infos2{
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    line-height: 20px;
+    padding-right: 60px;
+    padding-top: 15px;
+    top: 5px;
+}
+.sous-titres{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    font-weight: lighter;
+}
+#bouton{
+    height: auto;
+    width: 150px;
+    position: absolute;
+    top: 316px;
+}
