@@ -92,7 +92,7 @@ vertical-align: text-top;
 	
 }
 .icon { 
-	vertical-align:;
+	vertical-align: middle;
 	color: white;
 	width: auto;
 	height: 20px;
@@ -122,6 +122,7 @@ vertical-align: text-top;
 .header-nav i {
 	margin-right: 5px;
 	font-size: 30px;
+	vertical-align: middle;
 }
 
 .header-nav ul,
@@ -649,9 +650,10 @@ color: #fff;
 .films_navigation {
     position: absolute;
     bottom: 30px;
-    left: 10%;
+    left: 50%;
     z-index: 2;
 	display: flex;
+	transform: translateX(-50%);
 }
 
 .film_nav {

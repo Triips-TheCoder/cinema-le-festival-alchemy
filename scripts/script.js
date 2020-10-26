@@ -54,26 +54,22 @@ function activateFilm(wantedFilmIndex) {
 
 const arrowLeft = document.getElementById('arrow_left');
 const arrowRight = document.getElementById('arrow_right');
-const filmNav = document.querySelector('.films_navigation');
-let filmIndex = -1
-const offset = -10
+let filmIndex = 0
 
 arrowLeft.addEventListener('click', (event) => {
     filmIndex -= 1
-    if (filmIndex == -2) {
+    if (filmIndex == -1) {
         filmIndex += 1;
         return;
     }
-    filmNav.style.left = (offset * filmIndex) + "%"
     activateFilm(filmIndex)
 })
 
 arrowRight.addEventListener('click', (event) => {
     filmIndex += 1
-    if (filmIndex == 5) {
+    if (filmIndex == 4) {
         filmIndex -= 1;
         return;
     }
-    filmNav.style.left = (offset * filmIndex) + "%"
     activateFilm(filmIndex)
 })
